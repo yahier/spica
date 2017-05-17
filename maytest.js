@@ -2,6 +2,14 @@
  * Created by yahier on 17/5/16.
  */
 
+var Maytest = {
+    main: function () {
+        initHtml();
+    }
+}
+
+
+
 var test1 = function () {
     var a = function (a) {
         return function (a) {
