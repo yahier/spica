@@ -5,11 +5,26 @@
 
 var Func = {
     main: function () {
-       // test2();
+        // test2();
+        var hero = new Hero("yahier");
+        hero.action();
+
 
     }
 }
 
+//对象方法
+function Hero(name) {
+    this.name = name;
+    this.action = function () {
+        alert(this.name + "保护民众");
+    }
+
+    //怎么调用此方法
+    var say = function () {
+        alert("起来了");
+    }
+}
 
 
 var overrideSelf = function () {
@@ -20,6 +35,17 @@ var overrideSelf = function () {
     }
 }
 
+var testCaller = function () {
+    var c = b();
+}
+
+var b = function () {
+    return a();
+}
+
+var a = function () {
+    return a.caller;
+}
 
 var sum = function (a, b) {
     return a + b;
