@@ -6,9 +6,10 @@
 var Func = {
     main: function () {
         // test2();
-        var hero = new Hero("yahier");
-        hero.action();
-
+        //var hero = new Hero("yahier");
+        //hero.action();
+        //alert(hero.action().toString());
+        //alert(Hero.toString());//这样会显示方法的源代码
 
     }
 }

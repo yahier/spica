@@ -5,9 +5,9 @@
 
 var PrototypeTest = {
     main: function () {
-        F.prototype = attr1;
-        var f = new F();
-        alert("prototype:" + f.say());
+        //F.prototype = attr1;
+        //var f = new F();
+       // alert("prototypeya:" + f.say());
     }
 }
 
@@ -17,7 +17,7 @@ function F() {
 }
 
 var attr1 = {
-    name: 'yahier',
+    name: 'bingo',
     say: function () {
         return 'i am ' + this.name;
     }
